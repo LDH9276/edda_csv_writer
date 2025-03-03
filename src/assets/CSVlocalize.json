@@ -1,0 +1,226 @@
+{
+    "script": {
+        "category": "Main",
+        "CSVName": "스크립트",
+        "item": [
+            "Id",
+            "해당하는 대사",
+            "캐릭터",
+            "아이템 Id",
+            "배경 Id",
+            "전경 Id",
+            "장면 Id",
+            "오디오 BGM Id",
+            "오디오 SFX Id",
+            "자동 진행",
+            "상호작용 차단"
+        ]
+    },
+    "background": {
+        "category": "Image",
+        "CSVName": "배경",
+        "item": [
+            "Id",
+            "Index",
+            "Name",
+            "PosX",
+            "PosY",
+            "PosChangeTime",
+            "ScaleX",
+            "ScaleY",
+            "ScaleChangeTime",
+            "Color",
+            "ColorChangeTime",
+            "Effect",
+            "EffectDurationTime",
+            "AlphaValue",
+            "BlurValue"
+        ]
+    },
+    "foreground": {
+        "category": "Image",
+        "CSVName": "최상위 이미지",
+        "item": [
+            "Id",
+            "Index",
+            "Name",
+            "PosX",
+            "PosY",
+            "PosChangeTime",
+            "ScaleX",
+            "ScaleY",
+            "ScaleChangeTime",
+            "Color",
+            "ColorChangeTime",
+            "Effect",
+            "EffectDurationTime",
+            "AlphaValue",
+            "BlurValue"
+        ]
+    },
+    "character": {
+        "category": "Image",
+        "CSVName": "캐릭터",
+        "item": [
+            "Id",
+            "Name",
+            "Index",
+            "PosX",
+            "PosY",
+            "ScaleX",
+            "ScaleY",
+            "IsActive bool",
+            "Tag"
+        ]
+    },
+    "icon": {
+        "category": "Image",
+        "CSVName": "말풍선 등 아이콘",
+        "item": [
+            "Id",
+            "Index",
+            "Name",
+            "PosX",
+            "PosY",
+            "PosChangeTime",
+            "ScaleX",
+            "ScaleY",
+            "ScaleChangeTime",
+            "Color",
+            "ColorChangeTime",
+            "Effect",
+            "EffectDurationTime",
+            "AlphaValue",
+            "BlurValue",
+            "Flip bool"
+        ]
+    },
+    "item": {
+        "category": "Image",
+        "CSVName": "아이템",
+        "item": [
+            "Id",
+            "Index",
+            "Name",
+            "PosX",
+            "PosY",
+            "PosChangeTime",
+            "ScaleX",
+            "ScaleY",
+            "ScaleChangeTime",
+            "Color",
+            "ColorChangeTime",
+            "Effect",
+            "EffectDurationTime",
+            "AlphaValue",
+            "BlurValue"
+        ]
+    },    
+    "scene": {
+        "category": "Image",
+        "CSVName": "장면",
+        "item": [
+            "Id",
+            "Index",
+            "Name",
+            "PosX",
+            "PosY",
+            "PosChangeTime",
+            "ScaleX",
+            "ScaleY",
+            "ScaleChangeTime",
+            "Color",
+            "ColorChangeTime",
+            "Effect",
+            "EffectDurationTime",
+            "AlphaValue",
+            "BlurValue"
+        ]
+    },    
+    "sprite": {
+        "category": "Image",
+        "CSVName": "스프라이트 설정",
+        "item": [
+            "Id",
+            "GroupId",
+            "Name",
+            "Index",
+            "PosX",
+            "PosY",
+            "PosChangeTime",
+            "ScaleX",
+            "ScaleY",
+            "ScaleChangeTime",
+            "Color",
+            "ColorChangeTime",
+            "Effect",
+            "EffectDurationTime",
+            "AlphaValue",
+            "BlurValue",
+            "Flip bool",
+            "AnimationState",
+            "IconId",
+            "Tag"
+        ]
+    },    
+    "bgm": {
+        "category": "Audio",
+        "CSVName": "BGM 설정",
+        "item": [
+            "Id",
+            "Index",
+            "Name",
+            "Loop bool",
+            "Volume",
+            "Effect",
+            "EffectDurationTime",
+            "StartAt",
+            "EndAt",
+            "Delay"
+        ]
+    },
+    "sfx": {
+        "category": "Audio",
+        "CSVName": "효과음 설정",
+        "item": [
+            "Id",
+            "Index",
+            "Name",
+            "Loop bool",
+            "Volume",
+            "Effect",
+            "EffectDurationTime",
+            "StartAt",
+            "EndAt",
+            "Delay"
+        ]
+    },
+    "dialogue": {
+        "category": "Dialogue",
+        "CSVName": "대화 시스템",
+        "item": [
+            "Id",
+            "Name",
+            "Text",
+            "TypeSpeed",
+            "FontAsset",
+            "FontStyle",
+            "FontSize",
+            "FontColor",
+            "VoiceIndex",
+            "Tag"
+        ]
+    },
+    "choice": {
+        "category": "Dialogue",
+        "CSVName": "선택지 시스템",
+        "item": [
+            "Id",
+            "GroupId",
+            "Text",
+            "Value",
+            "StartIndex",
+            "EndIndex"
+        ]
+    }
+}

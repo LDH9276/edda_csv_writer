@@ -1,0 +1,226 @@
+{
+    "script": {
+        "category": "Main",
+        "CSVName": "script",
+        "description": [
+            "해당 CSV의 고유 ID입니다. 자동으로 생성/수정이 되므로 수정하실 필요는 없습니다.",
+            "dialogue.csv의 ID값입니다. 해당되는 대사의 순서를 기입해주시면 됩니다. 숫자로만 작성해야 합니다.",
+            "sprite.csv의 해당하는 ID를 입력해주세요. 숫자로만 작성해야 합니다.",
+            "해당 적용시 item.csv의 ID값을 기입해주세요.",
+            "BackgroundId: 표시할 배경의 식별자",
+            "ForegroundId: 표시할 전경의 식별자",
+            "SceneId: 씬의 식별자",
+            "AudioBGMId: 재생할 배경 음악의 식별자",
+            "AudioSFXId: 재생할 효과음의 식별자",
+            "AutoPass: 스크립트 라인이 자동으로 진행되는지 여부",
+            "BlockInteraction: 이 스크립트 라인 동안 플레이어 상호 작용이 차단되는지 여부"
+        ]
+        },
+        "background": {
+        "category": "Image",
+        "CSVName": "background",
+        "description": [
+            "Id: 배경의 고유 식별자",
+            "Index: 목록에서 배경의 인덱스",
+            "Name: 배경 이미지 파일 이름",
+            "PosX: 배경의 X 위치",
+            "PosY: 배경의 Y 위치",
+            "PosChangeTime: 배경 위치 변경 시간",
+            "ScaleX: 배경의 X 스케일",
+            "ScaleY: 배경의 Y 스케일",
+            "ScaleChangeTime: 배경 스케일 변경 시간",
+            "Color: 배경 색상",
+            "ColorChangeTime: 배경 색상 변경 시간",
+            "Effect: 배경에 적용된 효과",
+            "EffectDurationTime: 배경 효과 지속 시간",
+            "AlphaValue: 배경의 알파 값",
+            "BlurValue: 배경의 흐림 값"
+        ]
+        },
+        "foreground": {
+        "category": "Image",
+        "CSVName": "foreground",
+        "description": [
+            "Id: 전경의 고유 식별자",
+            "Index: 목록에서 전경의 인덱스",
+            "Name: 전경 이미지 파일 이름",
+            "PosX: 전경의 X 위치",
+            "PosY: 전경의 Y 위치",
+            "PosChangeTime: 전경 위치 변경 시간",
+            "ScaleX: 전경의 X 스케일",
+            "ScaleY: 전경의 Y 스케일",
+            "ScaleChangeTime: 전경 스케일 변경 시간",
+            "Color: 전경 색상",
+            "ColorChangeTime: 전경 색상 변경 시간",
+            "Effect: 전경에 적용된 효과",
+            "EffectDurationTime: 전경 효과 지속 시간",
+            "AlphaValue: 전경의 알파 값",
+            "BlurValue: 전경의 흐림 값"
+        ]
+        },
+        "character": {
+        "category": "Image",
+        "CSVName": "character",
+        "description": [
+            "Id: 캐릭터의 고유 식별자",
+            "Name: 캐릭터 이름",
+            "Index: 목록에서 캐릭터의 인덱스",
+            "PosX: 캐릭터의 X 위치",
+            "PosY: 캐릭터의 Y 위치",
+            "ScaleX: 캐릭터의 X 스케일",
+            "ScaleY: 캐릭터의 Y 스케일",
+            "IsActive: 캐릭터 활성화 여부",
+            "Tag: 캐릭터와 연결된 태그"
+        ]
+        },
+        "icon": {
+        "category": "Image",
+        "CSVName": "icon",
+        "description": [
+            "Id: 아이콘의 고유 식별자",
+            "Index: 목록에서 아이콘의 인덱스",
+            "Name: 아이콘 이미지 파일 이름",
+            "PosX: 아이콘의 X 위치",
+            "PosY: 아이콘의 Y 위치",
+            "PosChangeTime: 아이콘 위치 변경 시간",
+            "ScaleX: 아이콘의 X 스케일",
+            "ScaleY: 아이콘의 Y 스케일",
+            "ScaleChangeTime: 아이콘 스케일 변경 시간",
+            "Color: 아이콘 색상",
+            "ColorChangeTime: 아이콘 색상 변경 시간",
+            "Effect: 아이콘에 적용된 효과",
+            "EffectDurationTime: 아이콘 효과 지속 시간",
+            "AlphaValue: 아이콘의 알파 값",
+            "BlurValue: 아이콘의 흐림 값",
+            "Flip: 아이콘 뒤집기 여부"
+        ]
+        },
+        "description": {
+        "category": "Image",
+        "CSVName": "description",
+        "description": [
+            "Id: 설명 이미지의 고유 식별자",
+            "Index: 목록에서 설명 이미지의 인덱스",
+            "Name: 설명 이미지 파일 이름",
+            "PosX: 설명 이미지의 X 위치",
+            "PosY: 설명 이미지의 Y 위치",
+            "PosChangeTime: 설명 이미지 위치 변경 시간",
+            "ScaleX: 설명 이미지의 X 스케일",
+            "ScaleY: 설명 이미지의 Y 스케일",
+            "ScaleChangeTime: 설명 이미지 스케일 변경 시간",
+            "Color: 설명 이미지 색상",
+            "ColorChangeTime: 설명 이미지 색상 변경 시간",
+            "Effect: 설명 이미지에 적용된 효과",
+            "EffectDurationTime: 설명 이미지 효과 지속 시간",
+            "AlphaValue: 설명 이미지의 알파 값",
+            "BlurValue: 설명 이미지의 흐림 값"
+        ]
+        },
+        "scene": {
+        "category": "Image",
+        "CSVName": "scene",
+        "description": [
+            "Id: 씬의 고유 식별자",
+            "Index: 목록에서 씬의 인덱스",
+            "Name: 씬 이미지 파일 이름",
+            "PosX: 씬의 X 위치",
+            "PosY: 씬의 Y 위치",
+            "PosChangeTime: 씬 위치 변경 시간",
+            "ScaleX: 씬의 X 스케일",
+            "ScaleY: 씬의 Y 스케일",
+            "ScaleChangeTime: 씬 스케일 변경 시간",
+            "Color: 씬 색상",
+            "ColorChangeTime: 씬 색상 변경 시간",
+            "Effect: 씬에 적용된 효과",
+            "EffectDurationTime: 씬 효과 지속 시간",
+            "AlphaValue: 씬의 알파 값",
+            "BlurValue: 씬의 흐림 값"
+        ]
+        },
+        "sprite": {
+        "category": "Image",
+        "CSVName": "sprite",
+        "description": [
+            "Id: 스프라이트의 고유 식별자",
+            "GroupId: 스프라이트가 속한 그룹의 식별자",
+            "Name: 스프라이트 이미지 파일 이름",
+            "Index: 목록에서 스프라이트의 인덱스",
+            "PosX: 스프라이트의 X 위치",
+            "PosY: 스프라이트의 Y 위치",
+            "PosChangeTime: 스프라이트 위치 변경 시간",
+            "ScaleX: 스프라이트의 X 스케일",
+            "ScaleY: 스프라이트의 Y 스케일",
+            "ScaleChangeTime: 스프라이트 스케일 변경 시간",
+            "Color: 스프라이트 색상",
+            "ColorChangeTime: 스프라이트 색상 변경 시간",
+            "Effect: 스프라이트에 적용된 효과",
+            "EffectDurationTime: 스프라이트 효과 지속 시간",
+            "AlphaValue: 스프라이트의 알파 값",
+            "BlurValue: 스프라이트의 흐림 값",
+            "Flip: 스프라이트 뒤집기 여부",
+            "AnimationState: 스프라이트 애니메이션 상태",
+            "IconId: 스프라이트와 연결된 아이콘의 식별자",
+            "Tag: 스프라이트와 연결된 태그"
+        ]
+        },
+        "bgm": {
+        "category": "Audio",
+        "CSVName": "bgm",
+        "description": [
+            "Id: 배경 음악의 고유 식별자",
+            "Index: 목록에서 배경 음악의 인덱스",
+            "Name: 배경 음악 파일 이름",
+            "Loop: 배경 음악 반복 여부",
+            "Volume: 배경 음악 볼륨 (0~100)",
+            "Effect: 배경 음악에 적용된 효과",
+            "EffectDurationTime: 배경 음악 효과 지속 시간",
+            "StartAt: 배경 음악 시작 시간",
+            "EndAt: 배경 음악 종료 시간",
+            "Delay: 배경 음악 시작 전 지연 시간"
+        ]
+        },
+        "sfx": {
+        "category": "Audio",
+        "CSVName": "sfx",
+        "description": [
+            "Id: 효과음의 고유 식별자",
+            "Index: 목록에서 효과음의 인덱스",
+            "Name: 효과음 파일 이름",
+            "Loop: 효과음 반복 여부",
+            "Volume: 효과음 볼륨 (0~100)",
+            "Effect: 효과음에 적용된 효과",
+            "EffectDurationTime: 효과음 효과 지속 시간",
+            "StartAt: 효과음 시작 시간",
+            "EndAt: 효과음 종료 시간",
+            "Delay: 효과음 시작 전 지연 시간"
+        ]
+        },
+        "dialogue": {
+        "category": "Dialogue",
+        "CSVName": "dialogue",
+        "description": [
+            "Id: 대화의 고유 식별자",
+            "Name: 대화 이름",
+            "Text: 대화 내용",
+            "TypeSpeed: 대화 타이핑 속도",
+            "FontAsset: 대화에 사용되는 글꼴 에셋",
+            "FontStyle: 대화 글꼴 스타일",
+            "FontSize: 대화 글꼴 크기",
+            "FontColor: 대화 글꼴 색상",
+            "VoiceIndex: 대화와 연결된 음성 인덱스",
+            "Tag: 대화와 연결된 태그"
+        ]
+        },
+        "choice": {
+        "category": "Dialogue",
+        "CSVName": "choice",
+        "description": [
+            "Id: 선택지의 고유 식별자",
+            "GroupId: 선택지가 속한 그룹의 식별자",
+            "Text: 선택지 내용",
+            "Value: 선택지와 연결된 값",
+            "StartIndex: 선택지 시작 인덱스",
+            "EndIndex: 선택지 종료 인덱스"
+        ]
+    }
+}

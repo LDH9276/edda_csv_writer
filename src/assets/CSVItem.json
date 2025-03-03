@@ -1,0 +1,226 @@
+{
+    "script": {
+        "category": "Main",
+        "CSVName": "script",
+        "item": [
+            "Id int",
+            "DialogueId int",
+            "SpriteId int",
+            "ItemId int",
+            "BackgroundId int",
+            "ForegroundId int",
+            "SceneId int",
+            "AudioBGMId int",
+            "AudioSFXId int",
+            "AutoPass bool",
+            "BlockInteraction bool"
+        ]
+    },
+    "background": {
+        "category": "Image",
+        "CSVName": "background",
+        "item": [
+            "Id int",
+            "Index int",
+            "Name string",
+            "PosX float",
+            "PosY float",
+            "PosChangeTime float",
+            "ScaleX float",
+            "ScaleY float",
+            "ScaleChangeTime float",
+            "Color string",
+            "ColorChangeTime float",
+            "Effect string",
+            "EffectDurationTime float",
+            "AlphaValue float",
+            "BlurValue float"
+        ]
+    },
+    "foreground": {
+        "category": "Image",
+        "CSVName": "foreground",
+        "item": [
+            "Id int",
+            "Index int",
+            "Name string",
+            "PosX float",
+            "PosY float",
+            "PosChangeTime float",
+            "ScaleX float",
+            "ScaleY float",
+            "ScaleChangeTime float",
+            "Color string",
+            "ColorChangeTime float",
+            "Effect string",
+            "EffectDurationTime float",
+            "AlphaValue float",
+            "BlurValue float"
+        ]
+    },
+    "character": {
+        "category": "Image",
+        "CSVName": "character",
+        "item": [
+            "Id int",
+            "Name string",
+            "Index int",
+            "PosX float",
+            "PosY float",
+            "ScaleX float",
+            "ScaleY float",
+            "IsActive bool",
+            "Tag string"
+        ]
+    },
+    "icon": {
+        "category": "Image",
+        "CSVName": "icon",
+        "item": [
+            "Id int",
+            "Index int",
+            "Name string",
+            "PosX float",
+            "PosY float",
+            "PosChangeTime float",
+            "ScaleX float",
+            "ScaleY float",
+            "ScaleChangeTime float",
+            "Color string",
+            "ColorChangeTime float",
+            "Effect string",
+            "EffectDurationTime float",
+            "AlphaValue float",
+            "BlurValue float",
+            "Flip bool"
+        ]
+    },
+    "item": {
+        "category": "Image",
+        "CSVName": "item",
+        "item": [
+            "Id int",
+            "Index int",
+            "Name string",
+            "PosX float",
+            "PosY float",
+            "PosChangeTime float",
+            "ScaleX float",
+            "ScaleY float",
+            "ScaleChangeTime float",
+            "Color string",
+            "ColorChangeTime float",
+            "Effect string",
+            "EffectDurationTime float",
+            "AlphaValue float",
+            "BlurValue float"
+        ]
+    },    
+    "scene": {
+        "category": "Image",
+        "CSVName": "scene",
+        "item": [
+            "Id int",
+            "Index int",
+            "Name string",
+            "PosX float",
+            "PosY float",
+            "PosChangeTime float",
+            "ScaleX float",
+            "ScaleY float",
+            "ScaleChangeTime float",
+            "Color string",
+            "ColorChangeTime float",
+            "Effect string",
+            "EffectDurationTime float",
+            "AlphaValue float",
+            "BlurValue float"
+        ]
+    },    
+    "sprite": {
+        "category": "Image",
+        "CSVName": "sprite",
+        "item": [
+            "Id int",
+            "GroupId int",
+            "Name string",
+            "Index int",
+            "PosX float",
+            "PosY float",
+            "PosChangeTime float",
+            "ScaleX float",
+            "ScaleY float",
+            "ScaleChangeTime float",
+            "Color string",
+            "ColorChangeTime float",
+            "Effect string",
+            "EffectDurationTime float",
+            "AlphaValue float",
+            "BlurValue float",
+            "Flip bool",
+            "AnimationState string",
+            "IconId int",
+            "Tag string"
+        ]
+    },    
+    "bgm": {
+        "category": "Audio",
+        "CSVName": "bgm",
+        "item": [
+            "Id int",
+            "Index int",
+            "Name string",
+            "Loop bool",
+            "Volume int(0~100)",
+            "Effect string",
+            "EffectDurationTime int",
+            "StartAt float",
+            "EndAt float",
+            "Delay float"
+        ]
+    },
+    "sfx": {
+        "category": "Audio",
+        "CSVName": "sfx",
+        "item": [
+            "Id int",
+            "Index int",
+            "Name string",
+            "Loop bool",
+            "Volume int(0~100)",
+            "Effect string",
+            "EffectDurationTime int",
+            "StartAt float",
+            "EndAt float",
+            "Delay float"
+        ]
+    },
+    "dialogue": {
+        "category": "Dialogue",
+        "CSVName": "dialogue",
+        "item": [
+            "Id int",
+            "Name string",
+            "Text string",
+            "TypeSpeed float",
+            "FontAsset string",
+            "FontStyle string",
+            "FontSize int",
+            "FontColor string",
+            "VoiceIndex int",
+            "Tag string"
+        ]
+    },
+    "choice": {
+        "category": "Dialogue",
+        "CSVName": "choice",
+        "item": [
+            "Id int",
+            "GroupId int",
+            "Text string",
+            "Value string",
+            "StartIndex int",
+            "EndIndex int"
+        ]
+    }
+}

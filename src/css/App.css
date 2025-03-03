@@ -1,0 +1,38 @@
+@charset "UTF-8";
+/* 메인 서식 */
+.App { width: 100%; max-width: 1200px; margin: 0 auto; } 
+
+/* 상단 선택지 */
+.controls { display: flex; gap: 16px; width: 100%; margin: 30px auto; justify-content: center; } 
+.controls label { display: flex; width: 180px; height: 48px; border: 1px solid #000; align-items: center; justify-content: center; border-radius: 8px; cursor: pointer; } 
+.control-notice { width: 100%; margin-bottom: 50px; font-weight: 400; font-size: 14px; text-align: center; } 
+.title { width: 100%; font-weight: 800; font-size: 36px; text-align: center; } 
+
+.sortable-item .drag-handle { display: flex; flex-shrink: 0; width: 80px; height: 100%; align-items: center; justify-content: center; } 
+.sortable-item .drag-handle span { width: 24px; height:240px; background: url(./icon/drag.svg) no-repeat center; background-size: contain; } 
+
+.sort-list { display: flex; } 
+.sort-item { list-style: none; } 
+
+/* 편집 내용 */
+.csv-item { display: flex; flex-direction: column; } 
+.csv-item li { list-style: none; position: relative; width: 100%; padding: 16px 16px 16px 0px; background: #fff; border-radius: 16px 0 16px 16px; box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.2); box-sizing: border-box; } 
+.csv-item li ~ li { margin-top: 62px; } 
+.csv-item .dialogue-row { padding-left: 24px; border-left: 1px solid #ddd; } 
+.csv-item .dialogue-row .dialogue-item { display: flex; flex-wrap: wrap; gap: 15px 30px; justify-content: flex-start; align-items: center; } 
+.csv-item .dialogue-item > div,
+.csv-item .dialogue-item > label { display: flex; flex-direction: column; width: 22.5%; } 
+.csv-item .dialogue-item > div > .radio { display: flex; gap: 8px; } 
+.csv-item .field-label { display: flex; justify-content: space-between; align-items: center; } 
+.csv-item .tooltip { display: block; position: relative; width: 48px; height: 48px; background: url(./icon/tooltip.svg) no-repeat center; } 
+.csv-item .tooltip-box { display: none; position: absolute; top: 48px; right: 50%; width: 280px; padding: 40px; background: #fff; z-index: 100; border-radius: 20px; box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.2); transform: translateX(50%); word-break: keep-all; } 
+.csv-item .tooltip:hover .tooltip-box { display: block; } 
+.csv-item .radio label { display: flex; gap: 8px; width: 50%; align-items: center; justify-content: flex-start; } 
+.csv-item .dialogue-item > label > input { width: 100%; height: 48px; padding-left: 20px; border: 1px solid #ddd; font-size: 16px; line-height: 46px; border-radius: 24px; box-sizing: border-box; } 
+.csv-item input[type="number"] { -moz-appearance: textfield; } 
+.csv-item input[type="number"]::-webkit-outer-spin-button,
+.csv-item input[type="number"]::-webkit-inner-spin-button { margin: 0; -webkit-appearance: none; } 
+.csv-item .dialogue-row .btn-wrapper { display: flex; gap: 0; position: absolute; top: -22px; right: 0px; overflow: hidden; width: 280px; height: 42px; align-items: center; justify-content: center; transform: translateY(-50%); border-radius: 8px 8px 0 0; } 
+.csv-item .dialogue-row .btn-wrapper button { font-size: 14px; border-radius: 0; } 
+.csv-item .btn-add { width: 100%; height: 42px; border: none; background: #ce0000; color: #fff; } 
+.csv-item .btn-delete { width: 100%; height: 42px; border: none; background: #101010; color: #fff; } 
