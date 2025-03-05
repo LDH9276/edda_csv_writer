@@ -1,6 +1,5 @@
-@charset "UTF-8";
-/* 메인 서식 */
-.App { width: 100%; max-width: 1200px; margin: 0 auto; } 
+@charset "UTF-8";/* 메인 서식 */
+.App { width: 100%; max-width: 1200px; margin: 0 auto 160px; } 
 
 /* 상단 선택지 */
 .controls { display: flex; gap: 16px; width: 100%; margin: 30px auto; justify-content: center; } 
@@ -19,9 +18,11 @@
 .csv-item li { list-style: none; position: relative; width: 100%; padding: 16px 16px 16px 0px; background: #fff; border-radius: 16px 0 16px 16px; box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.2); box-sizing: border-box; } 
 .csv-item li ~ li { margin-top: 62px; } 
 .csv-item .dialogue-row { padding-left: 24px; border-left: 1px solid #ddd; } 
-.csv-item .dialogue-row .dialogue-item { display: flex; flex-wrap: wrap; gap: 15px 30px; justify-content: flex-start; align-items: center; } 
+.csv-item .dialogue-row .dialogue-item { display: grid; grid-template-columns: repeat(4, 1fr); gap: 15px 30px; justify-content: flex-start; align-items: center; } 
 .csv-item .dialogue-item > div,
-.csv-item .dialogue-item > label { display: flex; flex-direction: column; width: 22.5%; } 
+.csv-item .dialogue-item > label { display: flex; flex-direction: column; width: 100%; } 
+.csv-item .dialogue-item > .text { grid-column: 3/5; grid-row: 1/4; } 
+.csv-item .dialogue-item > .text textarea { width: 100%; height: 272px; padding-left: 20px; border: 1px solid #ddd; font-size: 16px; line-height: 46px; border-radius: 24px; box-sizing: border-box; resize: none; } 
 .csv-item .dialogue-item > div > .radio { display: flex; gap: 8px; } 
 .csv-item .field-label { display: flex; justify-content: space-between; align-items: center; } 
 .csv-item .tooltip { display: block; position: relative; width: 48px; height: 48px; background: url(./icon/tooltip.svg) no-repeat center; } 

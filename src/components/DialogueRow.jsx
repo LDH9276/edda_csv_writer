@@ -34,7 +34,7 @@ const DialogueRow = ({ row, index, updateRow, addRowAfter, deleteRow, activeTab 
                                     onMouseEnter={() => setHoveredField(idx)}
                                     onMouseLeave={() => setHoveredField(null)}
                                 >
-                                    <span>{localizedFieldName} &#40;{fieldType}&#41;</span>
+                                    <span>{localizedFieldName}</span>
                                     <div className={`tooltip ${hoveredField === idx ? 'active' : ''}`}>
                                         <div className="tooltip-box">
                                             {tooltipText}
@@ -73,7 +73,7 @@ const DialogueRow = ({ row, index, updateRow, addRowAfter, deleteRow, activeTab 
                                     onMouseEnter={() => setHoveredField(idx)}
                                     onMouseLeave={() => setHoveredField(null)}
                                 >
-                                    <span>{localizedFieldName} &#40;{fieldType}&#41;</span>
+                                    <span>{localizedFieldName}</span>
                                     <div className={`tooltip ${hoveredField === idx ? 'active' : ''}`}>
                                         <div className="tooltip-box">
                                             {tooltipText}
@@ -89,6 +89,29 @@ const DialogueRow = ({ row, index, updateRow, addRowAfter, deleteRow, activeTab 
                                 />
                             </label>
                         );
+                    } else if (fieldName == 'Text'){
+                        inputElement = (
+                            <label key={idx} className='text'>
+                                <div
+                                    className="field-label"
+                                    onMouseEnter={() => setHoveredField(idx)}
+                                    onMouseLeave={() => setHoveredField(null)}
+                                >
+                                    <span>{localizedFieldName}</span>
+                                    <div className={`tooltip ${hoveredField === idx ? 'active' : ''}`}>
+                                        <div className="tooltip-box">
+                                            {tooltipText}
+                                        </div>
+                                    </div>
+                                </div>
+                                <textarea
+                                    placeholder={fieldName}
+                                    value={row[key] ?? ''}
+                                    onChange={(e) => updateRow(index, key, e.target.value)}
+                                    readOnly={fieldName.toLowerCase() === 'id'}
+                                />
+                            </label>
+                        );
                     } else {
                         inputElement = (
                             <label key={idx}>
@@ -97,7 +120,7 @@ const DialogueRow = ({ row, index, updateRow, addRowAfter, deleteRow, activeTab 
                                     onMouseEnter={() => setHoveredField(idx)}
                                     onMouseLeave={() => setHoveredField(null)}
                                 >
-                                    <span>{localizedFieldName} &#40;{fieldType}&#41;</span>
+                                    <span>{localizedFieldName}</span>
                                     <div className={`tooltip ${hoveredField === idx ? 'active' : ''}`}>
                                         <div className="tooltip-box">
                                             {tooltipText}
