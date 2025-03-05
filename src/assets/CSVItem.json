@@ -207,7 +207,7 @@
             "Font_Style string",
             "Font_Size int",
             "Font_Color string",
-            "Voice_Index int",
+            "Voice_Index string",
             "Tag string"
         ]
     },
