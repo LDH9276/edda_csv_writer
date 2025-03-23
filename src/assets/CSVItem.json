@@ -39,7 +39,6 @@
             "Id int",
             "Index int",
             "Name int",
-            "Desc string",
             "PosX float",
             "PosY float",
             "PosChangeTime int",
